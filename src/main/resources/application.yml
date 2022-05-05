@@ -1,0 +1,40 @@
+spring:
+    datasource:
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        initialization-mode: always
+        password: admin
+        platform: mysql
+        url: jdbc:mysql://localhost:3306/fresh66?createDatabaseIfNotExist=true&autoReconnect=true&useSSL=false
+        username: root
+    jpa:
+        hibernate:
+            ddl-auto: create-drop
+        properties:
+            hibernate:
+                dialect: org.hibernate.dialect.MySQL5Dialect
+        show-sql: true
+    output:
+      ansi:
+        enabled: ALWAYS
+    mail:
+      host: smtp.gmail.com
+      password: Password6rag*
+      port: 587
+      properties:
+        mail:
+          smtp:
+            auth: true
+            connectiontimeout: 5000
+            starttls:
+              enable: true
+            timeout: 5000
+            writetimeout: 5000
+      username: test123test12399@gmail.com
+logging:
+    level:
+      root:
+        info
+    file: logs/applogs.log
+server:
+  port: 9898
+

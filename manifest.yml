@@ -1,0 +1,13 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+applications:
+  - name: hackerrankappang
+path: target/hackerrank.jar
+domain: cfapps.io
+memory: 1G
+instances: 1
+services:
+  - hackerrank
